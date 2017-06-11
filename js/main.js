@@ -1,11 +1,14 @@
-define([
-	'jquery',
+require([
 	'angular',
-	'jq',
+	// 'jquery',
+	// 'jq',
+	'mainMenu',
 	'pService'
-], function($, angular, jq, pService){
-
+], function(angular/*, $, jq, pService, mmenu*/){
+	console.log("main js");
+	debugger;
 	angular.module('app', []);	
-	// angular.bootstrap(document, ['app']);
+	// mmenu.registraController();
+
 	
 });

@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html ng-app="app">
 <head>
+
 	<title>Controle financeiro</title>
 	<script src="node_modules/requirejs/require.js" data-main="js/config"></script>
 	<script src="js/config.js"></script>
+	<!-- <script src="node_modules/angular/angular.js"></script> -->
 	<script>require(['js/main.js']);</script>
+<!-- 	<script type="text/javascript">
+		angular.module('app',[]);
+		angular.module('app').controller('menuCtrl', function($scope){
+			alert('xxx');
+			$scope.valor = "vxxxxxxxxxx";
+		});
+	</script> -->
 </head>
 <body>
-<input type="text" name="bla" id="inputid">
+<div id="target"></div>
 
-<!-- <div ng-include src="'views/fornecedor.html'"></div> -->
+<div class="container" ng-controller="menuCtrl as ctrl">
+		{{valor}}
+		<ul>
+			<li><a href="javascript:void(0)" ng-click="abreFornecedores()">Fornecedores</a></li>
+			<li><a href="javascript:void(0)" ng-click="abreFaturas()">Faturas</a></li>
 
+		</ul>
+	</div>	
 </body>
-
-<script type="text/template" id="fornecedor.html"></script>
 </html>

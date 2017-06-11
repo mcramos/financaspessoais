@@ -1,11 +1,7 @@
-define([
+require([
 	'jquery',
-	'jq'
-], function($, jq){
-
-	$(function(){
-		console.log('xxxx');
-		jq.func1();
-	}());
+	'axjq'
+], function($, xjq){
+	debugger;
 
 });
